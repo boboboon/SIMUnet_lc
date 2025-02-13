@@ -1,0 +1,45 @@
+#!/bin/bash
+#!
+#! SLURM job script for SIMUnet
+#!
+
+#! Name of the job:
+#SBATCH -J n3fit
+#! Account name for project charging:
+#SBATCH -A MPHIL-DIS-SL2-CPU
+#! Use the Cascade Lake partition (you can change to icelake if needed)
+#SBATCH -p cclake
+#! Number of nodes required:
+#SBATCH --nodes=1
+#! Number of tasks (set to 1 since this is not an MPI job):
+#SBATCH --ntasks=1
+#! Number of CPUs per task (adjust as needed):
+#SBATCH --cpus-per-task=1
+#! Memory per CPU (defaults to ~3420 MB, adjust if needed):
+#SBATCH --mem=3420MB
+#! Maximum wallclock time for the job:
+#SBATCH --time=02:00:00
+#! Output and error files:
+#SBATCH --output=slurm_files/n3fit%j.out
+#SBATCH --error=slurm_files/n3fit%j.err
+#! Email notifications (uncomment and set your email if needed):
+##SBATCH --mail-type=ALL
+
+# Load system environment modules
+. /etc/profile.d/modules.sh
+module purge
+module load rhel8/default-ccl
+
+echo "Setting up conda env"
+# Activate Conda environment
+source /home/lc2010/miniconda3/etc/profile.d/conda.sh
+conda activate simunet
+
+echo "Switching to SIMUnet dir"
+cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
+
+echo "Running fit"
+# Run the command
+n3fit tutorial.yaml 150
+# n3fit runcard.yml replicas
+# evolven3fit runcard_folder number_of_replicas

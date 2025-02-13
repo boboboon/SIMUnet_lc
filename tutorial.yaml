@@ -15,6 +15,30 @@ dataset_inputs:
 - {dataset: HERACOMBNCEP460, frac: 0.75}
 # # Drell - Yan
 - {dataset: CMSDY1D12, cfac: ['QCD', 'EWK']}
+# # ttbar
+- {dataset: ATLASTTBARTOT7TEV, cfac: [QCD], simu_fac: "EFT_NLO"}
+# # ttbar AC
+- {dataset: ATLAS_TTBAR_8TEV_ASY, cfac: [QCD], simu_fac: "EFT_NLO"}
+# # TTZ
+- {dataset: ATLAS_TTBARZ_8TEV_TOTAL, simu_fac: "EFT_LO"}
+# # TTW
+- {dataset: ATLAS_TTBARW_8TEV_TOTAL, simu_fac: "EFT_LO"}
+# # single top
+- {dataset: ATLAS_SINGLETOP_TCH_7TEV_T, cfac: [QCD], simu_fac: "EFT_NLO"}
+# # tW
+- {dataset: ATLAS_SINGLETOPW_8TEV_TOTAL, simu_fac: "EFT_NLO"}
+# # W helicity
+- {dataset: ATLAS_WHEL_13TEV, simu_fac: "EFT_NLO", use_fixed_predictions: True}
+# # tt gamma
+- {dataset: ATLAS_TTBARGAMMA_8TEV_TOTAL, simu_fac: "EFT_LO", use_fixed_predictions: True}
+# # tZ
+- {dataset: ATLAS_SINGLETOPZ_13TEV_TOTAL, simu_fac: "EFT_LO", use_fixed_predictions: True}
+# # EWPO
+- {dataset: LEP_ZDATA, simu_fac: "EFT_LO", use_fixed_predictions: True}
+#  Higgs
+- {dataset: ATLAS_CMS_SSINC_RUNI, simu_fac: "EFT_NLO", use_fixed_predictions: True}
+# Diboson
+- {dataset: LEP_EEWW_182GEV, simu_fac: "EFT_LO", use_fixed_predictions: True}
 
 
 ############################################################
