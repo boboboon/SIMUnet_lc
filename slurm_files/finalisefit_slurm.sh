@@ -4,7 +4,7 @@
 #!
 
 #! Name of the job:
-#SBATCH -J n3fit
+#SBATCH -J finalisefit
 #! Account name for project charging:
 #SBATCH -A MPHIL-DIS-SL2-CPU
 #! Use the Cascade Lake partition (you can change to icelake if needed)
@@ -20,8 +20,8 @@
 #! Maximum wallclock time for the job:
 #SBATCH --time=02:00:00
 #! Output and error files:
-#SBATCH --output=log_files/n3fit%j.out
-#SBATCH --error=log_files/n3fit%j.err
+#SBATCH --output=log_files/evolven3fit%j.out
+#SBATCH --error=log_files/evolven3fit%j.err
 #! Email notifications (uncomment and set your email if needed):
 ##SBATCH --mail-type=ALL
 
@@ -38,8 +38,6 @@ conda activate simunet
 echo "Switching to SIMUnet dir"
 cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
-echo "Running fit"
+echo "Evolving fit"
 # Run the command
-n3fit tutorial.yaml 150
-# n3fit runcard.yml replicas
-# evolven3fit runcard_folder number_of_replicas
+postfit 150 tutorial

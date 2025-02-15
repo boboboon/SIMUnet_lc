@@ -20,8 +20,8 @@
 #! Maximum wallclock time for the job:
 #SBATCH --time=02:00:00
 #! Output and error files:
-#SBATCH --output=slurm_files/evolven3fit%j.out
-#SBATCH --error=slurm_files/evolven3fit%j.err
+#SBATCH --output=log_files/evolven3fit%j.out
+#SBATCH --error=log_files/evolven3fit%j.err
 #! Email notifications (uncomment and set your email if needed):
 ##SBATCH --mail-type=ALL
 
