@@ -14,16 +14,17 @@
 #! Number of tasks (set to 1 since this is not an MPI job):
 #SBATCH --ntasks=1
 #! Number of CPUs per task (adjust as needed):
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=2
 #! Memory per CPU (defaults to ~3420 MB, adjust if needed):
-#SBATCH --mem=3420MB
+#SBATCH --mem=6840MB
 #! Maximum wallclock time for the job:
-#SBATCH --time=02:00:00
+#SBATCH --time=20:00:00
 #! Output and error files:
 #SBATCH --output=log_files/n3fit%j.out
 #SBATCH --error=log_files/n3fit%j.err
 #! Email notifications (uncomment and set your email if needed):
-##SBATCH --mail-type=ALL
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=lc2010@cam.ac.uk
 
 # Load system environment modules
 . /etc/profile.d/modules.sh

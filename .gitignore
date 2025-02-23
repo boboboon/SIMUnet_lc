@@ -439,4 +439,7 @@ tags
 
 # Runcard outputs we want to hide
 tutorial/*
+quick/*
 
+# Don't need to be sending outn our logs
+slurm_files/log_files/*
