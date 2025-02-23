@@ -4,7 +4,7 @@
 #!
 
 #! Name of the job:
-#SBATCH -J evolven3fit
+#SBATCH -J setup-fit
 #! Account name for project charging:
 #SBATCH -A MPHIL-DIS-SL2-CPU
 #! Use the Cascade Lake partition (you can change to icelake if needed)
@@ -18,10 +18,10 @@
 #! Memory per CPU (defaults to ~3420 MB, adjust if needed):
 #SBATCH --mem=3420MB
 #! Maximum wallclock time for the job:
-#SBATCH --time=02:00:00
+#SBATCH --time=00:30:00
 #! Output and error files:
-#SBATCH --output=log_files/evolven3fit%j.out
-#SBATCH --error=log_files/evolven3fit%j.err
+#SBATCH --output=log_files/setup%j.out
+#SBATCH --error=log_files/setup%j.err
 #! Email notifications (uncomment and set your email if needed):
 ##SBATCH --mail-type=ALL
 
@@ -38,6 +38,6 @@ conda activate simunet
 echo "Switching to SIMUnet dir"
 cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
-echo "Evolving fit"
+echo "Setting up fit"
 # Run the command
-evolven3fit quick 1000
+vp-setupfit quick.yaml

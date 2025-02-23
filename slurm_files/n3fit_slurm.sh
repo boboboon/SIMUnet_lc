@@ -40,6 +40,4 @@ cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
 echo "Running fit"
 # Run the command
-n3fit tutorial.yaml 150
-# n3fit runcard.yml replicas
-# evolven3fit runcard_folder number_of_replicas
+n3fit quick.yaml 1000

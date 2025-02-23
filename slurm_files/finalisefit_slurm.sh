@@ -40,4 +40,4 @@ cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
 echo "Evolving fit"
 # Run the command
-postfit 150 tutorial
+postfit 1000 quick
