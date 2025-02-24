@@ -24,6 +24,7 @@
 #SBATCH --error=log_files/setup%j.err
 #! Email notifications (uncomment and set your email if needed):
 ##SBATCH --mail-type=ALL
+#SBATCH --mail-user=lc2010@cam.ac.uk
 
 # Load system environment modules
 . /etc/profile.d/modules.sh

@@ -20,10 +20,11 @@
 #! Maximum wallclock time for the job:
 #SBATCH --time=02:00:00
 #! Output and error files:
-#SBATCH --output=log_files/evolven3fit%j.out
-#SBATCH --error=log_files/evolven3fit%j.err
+#SBATCH --output=log_files/finalisefit%j.out
+#SBATCH --error=log_files/finalisefit%j.err
 #! Email notifications (uncomment and set your email if needed):
 ##SBATCH --mail-type=ALL
+#SBATCH --mail-user=lc2010@cam.ac.uk
 
 # Load system environment modules
 . /etc/profile.d/modules.sh
@@ -38,6 +39,6 @@ conda activate simunet
 echo "Switching to SIMUnet dir"
 cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
-echo "Evolving fit"
+echo "Finalising fit"
 # Run the command
-postfit 1000 quick
+postfit 1 quick
