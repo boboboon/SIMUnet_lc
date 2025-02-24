@@ -437,9 +437,8 @@ tags
 # End of https://www.gitignore.io/api/c++,latex,cmake,python,jupyternotebook,qtcreator,vim
 
 
-# Runcard outputs we want to hide
-tutorial/*
-quick/*
+# I don't think we need the .dat files just yet if we're cloning for results
+*.dat
 
 # Don't need to be sending outn our logs
 slurm_files/log_files/*

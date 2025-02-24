@@ -1,0 +1,648 @@
+description: Runcard template. This one performs a simultaenous fit with some top
+  operators. The fit was performed as a check to verify that the renaming to simu_fac
+  and simu_parameters has been successfull. NNPDF4.0 methodology. Used to produce
+  Figure 4.7 of https://arxiv.org/pdf/2402.03308
+dataset_inputs:
+- dataset: ATLASTTBARTOT7TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLASTTBARTOT8TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TOPDIFF_DILEPT_8TEV_TTMNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_8TEV_LJETS_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTB_DIFF_8TEV_LJ_TRAPNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTB_DIFF_8TEV_LJ_TTRAPNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_DILEPTON_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_HADRONIC_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_HADRONIC_2D_TTM_ABSYTTNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_LJETS_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_TTMNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMSTTBARTOT5TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMSTTBARTOT7TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMSTTBARTOT8TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTBAR_2D_DIFF_MTT_TTRAP_NORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMSTOPDIFF8TEVTTRAPNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMSTTBARTOT13TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTB_DIFF_13TEV_2016_2L_TTMNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTBAR_13TEV_LJETS_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTBAR_13TEV_TTMNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_8TEV_ASY
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBAR_13TEV_ASY_2022
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTBAR_8TEV_ASY
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_TTBAR_13TEV_ASY
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_CMS_TTBAR_8TEV_ASY
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_TTBARZ_8TEV_TOTAL
+  simu_fac: EFT_LO
+- dataset: ATLAS_TTBARZ_13TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_LO
+- dataset: ATLAS_TTBARZ_13TEV_PTZNORM
+  simu_fac: EFT_LO
+- dataset: CMS_TTBARZ_8TEV_TOTAL
+  simu_fac: EFT_LO
+- dataset: CMS_TTBARZ_13TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_LO
+- dataset: CMS_TTBARZ_13TEV_PTZNORM
+  simu_fac: EFT_LO
+- dataset: ATLAS_TTBARW_8TEV_TOTAL
+  simu_fac: EFT_LO
+- dataset: ATLAS_TTBARW_13TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_LO
+- dataset: CMS_TTBARW_8TEV_TOTAL
+  simu_fac: EFT_LO
+- dataset: CMS_TTBARW_13TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_LO
+- dataset: ATLAS_SINGLETOP_TCH_7TEV_T
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_7TEV_TB
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_DIFF_7TEV_T_RAP_NORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_DIFF_7TEV_TBAR_RAP_NORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_8TEV_T
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_8TEV_TB
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_DIFF_8TEV_T_RAP_NORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_DIFF_8TEV_TBAR_RAP_NORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_SCH_8TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_13TEV_T
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_TCH_13TEV_TB
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOP_SCH_13TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_TOT_7TEV
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_8TEV_T
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_8TEV_TB
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_SCH_8TEV_TOTAL
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_13TEV_T
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_13TEV_TB
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOP_TCH_13TEV_YTNORM
+  cfac:
+  - QCD
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOPW_8TEV_TOTAL
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOPW_8TEV_SLEP_TOTAL
+  simu_fac: EFT_NLO
+- dataset: ATLAS_SINGLETOPW_13TEV_TOTAL
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOPW_8TEV_TOTAL
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOPW_13TEV_TOTAL
+  simu_fac: EFT_NLO
+- dataset: CMS_SINGLETOPW_13TEV_SLEP_TOTAL
+  simu_fac: EFT_NLO
+- dataset: ATLAS_WHEL_13TEV
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: ATLAS_CMS_WHEL_8TEV
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: ATLAS_TTBARGAMMA_8TEV_TOTAL
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: CMS_TTBARGAMMA_8TEV_TOTAL
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ATLAS_SINGLETOPZ_13TEV_TOTAL
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: CMS_SINGLETOPZ_13TEV_TOTAL
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: CMS_SINGLETOPZ_13TEV_PTT
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_ZDATA
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_BRW
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_BHABHA
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ALPHAEW_WITHTHUNC
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ATLAS_CMS_SSINC_RUNI
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: CMS_SSINC_RUNII
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: ATLAS_STXS_RUNII
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ATLAS_SSINC_RUNII_ZGAM
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ATLAS_SSINC_RUNII_MUMU
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_EEWW_182GEV
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_EEWW_189GEV
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_EEWW_198GEV
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: LEP_EEWW_206GEV
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+- dataset: ATLAS_WW_13TEV_2016_MEMU
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: ATLAS_WZ_13TEV_2016_MTWZ
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: CMS_WZ_13TEV_2016_PTZ
+  simu_fac: EFT_NLO
+  use_fixed_predictions: true
+- dataset: ATLAS_ZJJ_13TEV_2016
+  simu_fac: EFT_LO
+  use_fixed_predictions: true
+fixed_pdf_fit: true
+load_weights_from_fit: 221103-jmm-no_top_1000_iterated
+analytic_initialisation_pdf: 221103-jmm-no_top_1000_iterated
+analytic_check: true
+automatic_scale_choice: false
+simu_parameters:
+- name: OtZ
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OtW
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OtG
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Opt
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O3pQ3
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O3pq
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpQM
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpqMi
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Opui
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Opdi
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O3pl
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Opl
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Ope
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O1qd
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O1qu
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O1dt
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O1qt
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O1ut
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O11qq
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O13qq
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O8qd
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O8qu
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O8dt
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O8qt
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O8ut
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O81qq
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: O83qq
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Oll
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Omup
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Otap
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Otp
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Obp
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Ocp
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OWWW
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpG
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpW
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpB
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpWB
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: Opd
+  scale: 1.0
+  initialisation:
+    type: analytic
+- name: OpD
+  scale: 1.0
+  initialisation:
+    type: analytic
+datacuts:
+  t0pdfset: 221103-jmm-no_top_1000_iterated
+  q2min: 3.49
+  w2min: 12.5
+theory:
+  theoryid: 270
+trvlseed: 475038818
+nnseed: 2394641471
+mcseed: 1831662593
+save: weights.h5
+genrep: true
+parameters:
+  nodes_per_layer:
+  - 25
+  - 20
+  - 8
+  activation_per_layer:
+  - tanh
+  - tanh
+  - linear
+  initializer: glorot_normal
+  optimizer:
+    clipnorm: 6.073e-06
+    learning_rate: 0.002621
+    optimizer_name: Nadam
+  epochs: 30000
+  positivity:
+    initial: 184.8
+    multiplier:
+  integrability:
+    initial: 184.8
+    multiplier:
+  stopping_patience: 0.2
+  layer_type: dense
+  dropout: 0.0
+  threshold_chi2: 3.5
+fitting:
+  fitbasis: EVOL
+  basis:
+  - fl: sng
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 1.093
+    - 1.121
+    largex:
+    - 1.486
+    - 3.287
+  - fl: g
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 0.8329
+    - 1.071
+    largex:
+    - 3.084
+    - 6.767
+  - fl: v
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 0.5202
+    - 0.7431
+    largex:
+    - 1.556
+    - 3.639
+  - fl: v3
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 0.1205
+    - 0.4839
+    largex:
+    - 1.736
+    - 3.622
+  - fl: v8
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 0.5864
+    - 0.7987
+    largex:
+    - 1.559
+    - 3.569
+  - fl: t3
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - -0.5019
+    - 1.126
+    largex:
+    - 1.754
+    - 3.479
+  - fl: t8
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 0.6305
+    - 0.8806
+    largex:
+    - 1.544
+    - 3.481
+  - fl: t15
+    pos: false
+    trainable: false
+    mutsize:
+    - 15
+    mutprob:
+    - 0.05
+    smallx:
+    - 1.087
+    - 1.139
+    largex:
+    - 1.48
+    - 3.365
+positivity:
+  posdatasets:
+  - dataset: POSF2U
+    maxlambda: 1000000.0
+  - dataset: POSF2DW
+    maxlambda: 1000000.0
+  - dataset: POSF2S
+    maxlambda: 1000000.0
+  - dataset: POSFLL
+    maxlambda: 1000000.0
+  - dataset: POSDYU
+    maxlambda: 10000000000.0
+  - dataset: POSDYD
+    maxlambda: 10000000000.0
+  - dataset: POSDYS
+    maxlambda: 10000000000.0
+  - dataset: POSF2C
+    maxlambda: 1000000.0
+  - dataset: POSXUQ
+    maxlambda: 1000000.0
+  - dataset: POSXUB
+    maxlambda: 1000000.0
+  - dataset: POSXDQ
+    maxlambda: 1000000.0
+  - dataset: POSXDB
+    maxlambda: 1000000.0
+  - dataset: POSXSQ
+    maxlambda: 1000000.0
+  - dataset: POSXSB
+    maxlambda: 1000000.0
+  - dataset: POSXGL
+    maxlambda: 1000000.0
+integrability:
+  integdatasets:
+  - dataset: INTEGXT8
+    maxlambda: 100.0
+  - dataset: INTEGXT3
+    maxlambda: 100.0
+debug: false
+maxcores: 4
+use_cuts: internal
+use_t0: true
+actions_:
+- datacuts::theory::fitting performfit
+data_grouping_recorded_spec_:
+  standard_report: experiment
