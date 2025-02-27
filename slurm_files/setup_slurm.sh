@@ -14,9 +14,9 @@
 #! Number of tasks (set to 1 since this is not an MPI job):
 #SBATCH --ntasks=1
 #! Number of CPUs per task (adjust as needed):
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=1
 #! Memory per CPU (defaults to ~3420 MB, adjust if needed):
-#SBATCH --mem=6840MB
+#SBATCH --mem=3240MB
 #! Maximum wallclock time for the job:
 #SBATCH --time=00:30:00
 #! Output and error files:

@@ -41,4 +41,4 @@ cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
 echo "Finalising fit"
 # Run the command
-postfit 1 quick
+postfit 10 quick

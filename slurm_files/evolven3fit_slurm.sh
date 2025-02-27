@@ -40,5 +40,9 @@ echo "Switching to SIMUnet dir"
 cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
 echo "Evolving fit"
+
 # Run the command
-evolven3fit quick 1000
+#evolven3fit quick 1000
+
+# Or if you are doing fixed-pdf fit
+vp-fakeevolve quick 10

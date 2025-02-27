@@ -14,17 +14,16 @@
 #! Number of tasks (set to 1 since this is not an MPI job):
 #SBATCH --ntasks=1
 #! Number of CPUs per task (adjust as needed):
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=1
 #! Memory per CPU (defaults to ~3420 MB, adjust if needed):
 #SBATCH --mem=6840MB
 #! Maximum wallclock time for the job:
 #SBATCH --time=20:00:00
 #! Output and error files:
-#SBATCH --output=log_files/n3fit%j.out
-#SBATCH --error=log_files/n3fit%j.err
-#! Email notifications (uncomment and set your email if needed):
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=lc2010@cam.ac.uk
+#SBATCH --output=log_files/n3fit_%A_%a.out
+#SBATCH --error=log_files/n3fit_%A_%a.err
+#! Job array (0 to 10)
+#SBATCH --array=0-10
 
 # Load system environment modules
 . /etc/profile.d/modules.sh
@@ -39,6 +38,6 @@ conda activate simunet
 echo "Switching to SIMUnet dir"
 cd /home/lc2010/rds/hpc-work/simunet_git/SIMUnet
 
-echo "Running fit"
+echo "Running fit for job $SLURM_ARRAY_TASK_ID"
 # Run the command
-n3fit quick.yaml 1000
+n3fit quick.yaml $SLURM_ARRAY_TASK_ID

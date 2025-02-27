@@ -442,3 +442,6 @@ tags
 
 # Don't need to be sending outn our logs
 slurm_files/log_files/*
+
+# Actually we shouldn't track our runs
+quick
